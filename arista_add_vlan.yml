@@ -1,0 +1,12 @@
+---
+- hosts: 192.168.1.214
+  gather_facts: false
+  connection: network_cli
+  collections:
+    - arista.eos.eos
+
+  tasks:
+    - name: Add a vlan
+      arista.eos.eos_vlans:
+        config:
+          - vlan_id: "{{ vlan_id }}"
