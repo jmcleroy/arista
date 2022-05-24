@@ -9,5 +9,7 @@
     - name: Add a vlan
       arista.eos.eos_vlans:
         config:
+          - name: "{{ name }}"
+          - state: "active"
           - vlan_id: "{{ vlan_id }}"
           state: merged
