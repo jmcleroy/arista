@@ -6,13 +6,13 @@
     - arista.eos.eos
 
   tasks:
-    - name: Add a vlan
-      arista.eos.eos_vlans:
-        config:
-          - name: "{{ name }}"
-          - state: "active"
-          - vlan_id: "{{ vlan_id }}"
-          - state: merged
+#    - name: Add a vlan
+#      arista.eos.eos_vlans:
+#        config:
+#          - name: "{{ name }}"
+#          - state: "active"
+#          - vlan_id: "{{ vlan_id }}"
+#          - state: merged
     - name: Copy using inline content
       ansible.builtin.copy:
         content: '# This file was moved to /etc/other.conf'
