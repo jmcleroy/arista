@@ -16,4 +16,4 @@
     - name: Copy using inline content
       ansible.builtin.copy:
         content: '# This file was moved to /etc/other.conf'
-        dest: /tmp/ansible/test.txt
+        dest: /etc/test.txt
